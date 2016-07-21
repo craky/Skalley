@@ -18,11 +18,11 @@ public class AlleyView {
     @GET
     @Path("/all")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<String> getAllAlleys(){
-        List<String> SampleStrings = new ArrayList<>();
-        SampleStrings.add("FirstString");
-        SampleStrings.add("SecondString");
-        SampleStrings.add("ThirdString");
+    public List<Alley> getAllAlleys(){
+        List<Alley> SampleStrings = new ArrayList<>();
+        SampleStrings.add(new Alley(0,"Big bowl alley"));
+        SampleStrings.add(new Alley(1,"U Zvonu"));
+        SampleStrings.add(new Alley(2,"Kuzelna Zizkov"));
 
         return SampleStrings;
     }
